@@ -7,15 +7,11 @@ const Intro = () => {
     const vidRef = React.useRef();
     const [playVideo, setPlayVideo] = React.useState(false);
     const handleVideo = () => {
-        console.log('what is vref', vidRef)
-        console.log('playvideo before', playVideo)
-        // setPlayVideo((prev) => !prev);
-        setPlayVideo(!playVideo);
-        console.log('playvideo after', playVideo)
+        setPlayVideo((prev) => !prev);
         if (playVideo) {
             vidRef.current.pause();
         } else {
-            vidRef.current.pay();
+            vidRef.current.play();
         }
     }
     return (

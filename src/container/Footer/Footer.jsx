@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterOverlay, Newsletter, SubHeading} from "../../components";
+import {FooterOverlay, Newsletter} from "../../components";
 import {FiFacebook, FiTwitter, FiInstagram} from "react-icons/fi";
 import './Footer.css';
 import {images} from "../../constants";
